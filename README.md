@@ -1,6 +1,7 @@
 # Stealthy-False-Data-Injection-Attacks-FDIA-on-IEEE-30-Bus-System
 
-Abstract
+# Abstract
+
 Attacks (FDIA) engineered for the standard IEEE 30-bus power system. Unlike conventional datasets that focus on easily detectable anomalies, this dataset emphasizes highly stealthy micro-injections mathematically designed to bypass standard Bad Data Detection (BDD) mechanisms, specifically the Largest Normalized Residual (LNR) and Chi-Squared tests.
 
 The baseline normal operations are generated using Direct Current Power Flow (DCPF) equations integrated with real-world, highly variable load profiles sourced from the New York Independent System Operator (NYISO). To evaluate the robustness of modern machine learning and deep learning architectures, the attacks are categorized into five progressive scenarios. These scenarios range from High-Intensity attacks (Scenario 1) to an Advanced Combined scenario (Scenario 5), where the attack magnitudes are strictly restricted to a highly subtle range of [0.005, 0.05] radians, resulting in physically imperceptible angular deviations.
@@ -8,8 +9,11 @@ The baseline normal operations are generated using Direct Current Power Flow (DC
 To maximize usability, the dataset is provided in two distinct formats:
 
 CSV Format: 2D tabular data containing branch active power flows and multi-label attack statuses, ideal for statistical analysis and classical machine learning.
-NPY Format: 3D time-series arrays (Samples, Timesteps, Features) pre-processed with a sliding window length of 16, feature scaling, and class balancing (1:2 ratio), making it directly deployable for deep learning architectures (e.g., LSTMs, CNNs) targeting the dual challenges of attack Detection and Localization.
-Instructions:
+NPY Format: 3D time-series arrays (Samples, Timesteps, Features) pre-processed with a sliding window length of 16, feature scaling, and class balancing (1:2 ratio), making it directly 
+deployable for deep learning architectures (e.g., LSTMs, CNNs) targeting the dual challenges of attack Detection and Localization.
+
+# Instructions:
+
 The dataset is organized into 5 progressive scenarios. Each scenario is provided in two formats: 1. CSV Format: 2D tabular data for classical ML and statistical analysis. 2. NPY Format: 3D time-series arrays pre-formatted for deep learning models (e.g., LSTMs, CNNs).
 
 Preprocessing Details (NPY files):
